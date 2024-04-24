@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<style>
+body,html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+#video {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+     z-index: -1;
+}
+video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.active:hover{opacity: 0.5;color: yellow;}
+    .nav-link:hover{
+        
+        opacity: 0.5;
+    }
+   .nav2 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px dashed grey;
+  border-left: hidden;
+  border-right: hidden;
+  font-weight: bold;
+  font-size: 25px;
+}
+.nav2{
+  background-color: transparent;
+}
+.nav2:hover{
+  background-color: #333;
+}
+li {
+  list-style-type: none;
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  justify-content: space-between;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.row {
+  margin: 0 -5px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.map{
+  font-size: 100px;
+  padding: 50px;
+  transition: transform .2s;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+ 
+}
+.map:hover{
+  opacity: 0.5;
+  transform: scale(1.5);
+}
+.loc a{
+text-decoration: none;
+}
+.loc a:hover{
+opacity: 0.4;
+  color: gold;
+}
+.btni:hover{
+opacity: 0.4;
+color: yellow;
+}
+</style>
+<body><div id="video">
+  <video autoplay muted loop>
+    <source src="Kababjees Restaurant - Super Highway Karachi - Drone View - Expedition Pakistan.mp4">
+  </video>
+</div>
+ 
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:black;color: red;border: 1px dashed grey; border-left: hidden;border-right: hidden;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" >Phone:021 111 666 888</a>
+              </li>
+              &nbsp; &nbsp;
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" >mail:marketing@gmail.com</a>
+              </li>
+             
+            </ul>
+            <form class="d-flex">
+                <button class="btn btn-outline-danger" type="submit"><i class="bi bi-facebook"></i></button>
+                &nbsp;&nbsp;
+              <button class="btn btn-outline-danger" type="submit"><i class="bi bi-geo-alt-fill"></i></button>
+            </form>
+            &nbsp;
+            <button type="button" class="btn-close bg-light" aria-label="Close"></button>
+          </div>
+        </div>
+      </nav>
+<br>
+<br>
+<nav class="nav2 sticky-top">
+<ul>
+  &nbsp; &nbsp;
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a class="active" href="#about">About Us</a></li>
+  <li><a class="active" href="#menu">Menu</a></li>
+  <li><a href="#"><img src="images.png" alt="" width="200px" height="90px"></a></li>
+  <li><a class="active" href="#Order Online">Order Online</a></li>
+  <li><a class="active" href="#Bank discount">Bank Discount</a></li>
+  <li><a class="active" href="#contact">Contact</a></li>
+</ul>
+</nav>
+<br>
+<br>
+<br>
+<br>
+<div class="main" style="color: white;text-align: center;">
+  <h1>THE BEST PLACE TO REJOICE</h1>
+  <br>
+  <h1>&nbsp; &nbsp;VARIETY OF CUISINES</h1>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div style="background-color: black;">
+<h3 class="text-center" style="color: white;"> About Us</h3>
+<div class="row">
+  <div class="col-md-5 mt-4 text-center">
+      <img src="download (1).jpg" width="500px" height="400px">
+  </div>
+
+  <div class="col-md-5 mt-4" style="color: white;">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque vero adipisci quia! Vero officia eveniet, esse ullam omnis fuga voluptas perspiciatis qui ad consequatur id vitae tempora officiis reiciendis dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, dolorem aliquid eveniet amet animi deserunt, repellat, necessitatibus vel distinctio quod ullam pariatur molestias magnam perferendis perspiciatis iure illo laudantium eligendi!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur quae illum quibusdam labore. Natus rem, delectus fugit quos quas voluptate ab optio, ad voluptates eos cumque quisquam consectetur vitae nesciunt!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem dicta accusamus eveniet? Neque asperiores, ipsa nam maiores possimus obcaecati eligendi tenetur dignissimos suscipit iste blanditiis facilis animi fugit aspernatur quod?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam expedita, vitae magni dicta quia sunt eaque, quidem ducimus sit architecto id cum maiores! Obcaecati, voluptatem aut iure voluptatibus error natus!
+      </p>
+  </div>
+</div>
+</div>
+<br>
+<div class="bg text-center" >
+
+<h3 class="text-center" style="color: white;">Our Specialist</h3>
+<center><hr  style="color: rgb(206, 184, 44);width: 70px;"></center>
+<p class="text-light">Some Of Our Best Specialist Menu</p>
+</div>
+<br>
+
+</div>
+<div class="row">
+  <div class="column">
+    <div class="card">
+     <img src="images (1).jpg" alt="">
+     <center><a href="#"  class="btn btn-light" style="background-color: rgb(214, 175, 19);color: black;border: 1px solid white;width: 50%;">ORDER ONLINE</a></center>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="images (2).jpg" alt="">
+      <center><a href="#"  class="btn btn-light" style="background-color: rgb(214, 175, 19);color: black;border: 1px solid white;width: 50%;">ORDER ONLINE</a></center>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+   <img src="images (3).jpg" alt="">
+   <center><a href="#"  class="btn btn-light" style="background-color: rgb(214, 175, 19);color: black;border: 1px solid white;width: 50%;">ORDER ONLINE</a></center>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+     <img src="download (2).jpg" alt="">
+     <center><a href="#"  class="btn btn-light" style="background-color: rgb(214, 175, 19);color: black;border: 1px solid white;width: 50%;">ORDER ONLINE</a></center>
+
+    </div>
+  </div>
+
+</div>
+<br>
+<br>
+<form class="text-center" style="background-color: black;font-size: 25px;">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">CALL NOW</label>
+   
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label"><a href="#">021-111-666-888</a></label>
+   
+  </div>
+  <button type="submit" class="btn btn-warning">ORDER ONLINE</button>
+</form>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="bg text-center" >
+
+  <h3 class="text-center" style="color: white;">BANK DISCOUNT</h3>
+  <center><hr  style="color: rgb(206, 184, 44);width: 70px;"></center>
+  </div>
+  <br>
+  
+  </div>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+       <img src="download (4).jpg" alt="">
+      
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img src="download (3).jpg" alt="">
+       
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+     <img src="images (5).jpg" alt="">
+    
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+       <img src="download (5).jpg" alt="">
+      
+      </div>
+    </div>
+  
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="bg text-center" style="background-color: black;">
+
+    <h3 class="text-center" style="color: white;">GALLERY</h3>
+    <center><hr  style="color: rgb(206, 184, 44);width: 70px;"></center>
+   
+    <br>
+    
+    </div>
+    <div class="row" style="background-color: black;">
+      <div class="column">
+        <div class="card">
+         <img src="images (8).jpg" alt="">
+        
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="images (9).jpg" alt="" >
+         
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+       <img src="images (6).jpg" alt="">
+      
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+         <img src="download (6).jpg" alt="">
+        
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+   <center><div class="mess" style="color: whitesmoke;">
+    <img src="images.png" alt="">
+    <h4 style="color: rgb(230, 165, 12);">Eva Zu Back</h4>
+    <blockquote class="blockquote text-center" style="font-size: 20px;">
+      <q>The Ambinace of Resturant Is also Pleasent,making it suitable place to enjoy a meal with &nbsp;family or friends.The service quality is generally good,althought during home busy
+       &nbsp;times,there might be some waiting involved.lovely Ambinace peacful gatherings.</q>
+    </blockquote>
+    </div>
+  </center> 
+  <br>
+  <br><br>
+  <br>
+  <br>
+  <div class=" text-center" style="background-color: rgb(47, 43, 43);">
+
+    <h3 class="text-center" style="color: rgb(251, 216, 17);">GALLERY</h3>
+    <center><hr  style="color: rgb(206, 184, 44);width: 70px;"></center>
+   
+    <br>
+    
+    
+    <div class="row" style="background-color: rgb(47, 43, 43);">
+      
+        <div class="column">
+         <img src="images (14).jpg" class="map" >
+         <h3 class="text-warning">Shahid-E-Milat Road</h3>
+         <i class="bi bi-geo-alt-fill text-danger"></i>
+        
+        </div>
+      
+      
+        <div class="column">
+          <img src="images (10).jpg" alt=""  class="map">
+          <h3 class="text-warning">High Way</h3>
+          <i class="bi bi-geo-alt-fill text-danger"></i>
+        </div>
+      
+    
+
+        <div class="column">
+       <img src="images (11).jpg" alt="" class="map">
+       <h3 class="text-warning">Do-Darya</h3>
+       <i class="bi bi-geo-alt-fill text-danger"></i>
+        </div>
+      
+    
+      
+        <div class="column">
+         <img src="download (7).jpg" alt="" class="map">
+         <h3 class="text-warning">Hyderbad</h3>
+         <i class="bi bi-geo-alt-fill text-danger"></i>
+        </div>
+      
+    </div>
+  </div>
+  <hr>
+  <br><br>
+  <br>
+  <div class="container">
+    <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3" >
+      <div class="col">
+        <div class="p-3 " style="background-color: transparent;"><h3 class="text-warning">About Us</h3>
+        <p class="text-light">We welcome you to explore our taste of the world, in continental and chinese delights and that's even before you get to the variety and excellence, of our barbecue grill.
+</p>
+<br>
+<button type="button" class="btni btn-warning" style="background-color: transparent; ">
+  <i class="bi bi-facebook text-light"></i>
+</button> 
+<button type="button" class="btni btn-warning" style="background-color: transparent; "><i class="bi bi-instagram text-light"></i>
+</button> 
+ 
+</div>
+      </div>
+      <div class="col">
+        <div class="p-3" style="background-color: transparent;"><h3 class="text-warning">Contact Us</h3>
+        <p class="text-light"><i class="bi bi-envelope-fill text-warning"></i>  marketing@Kababjees.com</p>
+      <p class="text-light"><i class="bi bi-telephone-fill text-warning"></i>  021-111-666-888</p></div>
+      </div>
+     
+      
+      <div class="col">
+        <div class="p-3" style="background-color: transparent;"><h3 class="text-warning">Work Time</h3>
+        <p class="text-light">Sunday-Monday-------------5pm - 1am</p>
+        <button type="button" class="btn btn-warning">ORDER ONLINE</button></div>
+      </div>
+      <div class="col">
+        <div class="p-3" style="background-color: transparent;"><h3 class="text-warning">Location</h3>
+        <p class="loc"><a href="#" class="text-light">Do-Darya</a></p>
+      <p class="loc"><a href="#" class="text-light">Hyderbad</a></p>
+    <p class="loc"><a href="#" class="text-light">Shahid-E-Milat</a></p>
+  <p class="loc"><a href="#" class="text-light">Highway</a></p></div>
+      </div>
+      
+    </div>
+  </div>
+
+
+  <br><br><br>
+
+
+  <footer class=" footer pt-5 pb-5 " style="background-color: black;color: white;font-weight: 20px;">
+<div class="text-center">
+  <p>2024 <span style="color: yellow;">Kababjees</span>All rights reserved.Powered by <span  style="color: yellow;">Indolj.pk</span></p>
+</div>
+  </footer>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
